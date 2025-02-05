@@ -2,6 +2,7 @@
 export default function Hero(){
     return(
         <div className="hero center">
+            <div className="overlay"></div>
             <div className="left">
                 <div className="buying center">
                     <h4>Are you looking for land?</h4>
