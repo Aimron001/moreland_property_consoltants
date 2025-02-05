@@ -52,7 +52,11 @@ header a {
 nav {
   gap: 10px;
 }
-
+.active {
+  color: #a90f0b;
+  text-decoration: underline;
+  font-weight: 600;
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
