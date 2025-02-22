@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs";
 import Featured from "../components/Featured";
 import Hero from "../components/Hero";
 import ServicesSlider from "../components/ServicesSlider";
@@ -9,6 +10,7 @@ export default function Home(){
             <Hero />
             <Featured />
             <ServicesSlider />
+            <AboutUs />
         </div>
     )
 }
