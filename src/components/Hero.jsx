@@ -1,3 +1,4 @@
+import LandInquiry from "./LandInquiry";
 
 export default function Hero(){
     return(
@@ -12,9 +13,11 @@ export default function Hero(){
                 </div>
             </div>
             <div className="right">
-                <h1>Moreland Properties Consultants</h1>
-                <h3>We unlock your dream property in style</h3>
+                {/* <h1>Moreland Properties Consultants</h1> */}
+                {/* <h3>We unlock your dream property in style</h3> */}
             </div>
+
+            <LandInquiry />
         </div>
     )
 }

@@ -1,12 +1,11 @@
-import photo from '../assets/celebrating.png'
-export default function ServiceSlide(){
+
+export default function ServiceSlide(props){
+    console.log(props)
     return (
-        <div className="service-slide">
-            <img src={photo} alt="" />
-            <div className="desc">
-                <h4>Land Valuation</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aperiam dolor voluptates in ipsam. Molestias, error? </p>
-                <a href="#">Demo</a>
+        <div style={{backgroundImage:`url(${props.photo})`}} className="service-slide">
+            <div className="desc" >
+                <h4>{props.title}</h4>
+                <p>{props.description}</p>
             </div>
         </div>
     )
