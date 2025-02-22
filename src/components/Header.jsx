@@ -3,11 +3,11 @@ import logo from '../assets/logo.png'
 
 export default function Header(){
     return (
-        <header className="center">
+        <header className="center-div">
             <div>
                 <img src={logo} alt="company logo" id="logo"/>
             </div>
-            <nav className="center">
+            <nav className="center-div">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="listings">Listings</NavLink>
                 <NavLink to="services">Services</NavLink>
