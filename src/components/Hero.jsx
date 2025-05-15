@@ -2,21 +2,16 @@ import LandInquiry from "./LandInquiry";
 
 export default function Hero(){
     return(
-        <div className="hero center">
+        <div className="hero">
             <div className="overlay"></div>
             <div className="left">
-                <div className="buying center">
-                    <h4>Are you looking for land?</h4>
-                </div>
-                <div className="selling center">
-                    <h4>Are you selling land?</h4>
-                </div>
+                    <div>
+                        <h4>Connecting Land Buyers & Sellers </h4>
+                        <h4>with</h4>
+                        <h4>Trusted Expertise</h4>
+                    </div>
+                    <h5>Land Sales · Surveys · Valuations · Administration.</h5>
             </div>
-            <div className="right">
-                {/* <h1>Moreland Properties Consultants</h1> */}
-                {/* <h3>We unlock your dream property in style</h3> */}
-            </div>
-
             <LandInquiry />
         </div>
     )

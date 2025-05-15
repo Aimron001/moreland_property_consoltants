@@ -75,9 +75,12 @@ nav {
 /*********HERO*************/
 .hero {
   margin: auto;
+  padding: 20px;
   width: 100%;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   color: #fff;
   background-image: url('./assets/mpc.jpg');
@@ -86,8 +89,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
-  /* border-radius: 10px; */
-  /* padding: 20px; */
+  gap: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .overlay {
@@ -97,39 +99,58 @@ nav {
   /* border-radius: 10px; */
   background-color: #00000075;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero .left {
   height: 100%;
-  flex: 1;
-  display: flex;
+  max-height: 300px;
+  /* flex: 1; */
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: space-between; */
+  /* gap: 10px; */
+  border: 1px solid #ff7e5f;
+  z-index: 4;
 }
 
-.hero .left div {
-  margin-left: 20px;
-  flex: 1;
+.hero .left {
+  /* margin-left: 20px; */
   backdrop-filter: blur(2px);
-  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  background: rgba(100, 100, 100, 0.15); /* Glass effect */
   padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   font-size: 1.3em;
   font-weight: bold;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* text-transform: uppercase; */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   /* border-left: 5px solid #a90f0b; */
 }
+.left h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #fff;
+}
 
-.hero .left div:hover {
-  background: rgba(255, 255, 255, 0.25);
+.left h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+  letter-spacing: 0.5px;
+  color: #ddd;
+  border-top: 1px solid #777;
+}
+
+.hero .left:hover {
+  background: rgba(100, 100, 100, 0.25);
   transform: scale(1.05);
 }
 
@@ -145,7 +166,8 @@ nav {
 
 .buying {
   margin-top: 20px;
-  border-left: 5px solid #28a745; /* Green border for buying */
+  border-top: 5px solid #ff7e5f; /* Green border for buying */
+  border-left: 5px solid #ff7e5f; /* Green border for buying */
 }
 
 .selling {
@@ -154,14 +176,15 @@ nav {
 }
 
 .land-inquiry {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  /* position: absolute; */
+  /* top: 20px; */
+  /* right: 20px; */
   background: linear-gradient(135deg,#a9100bbb, #ff7e5f); /* Vibrant gradient */
   padding: 20px;
   border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   width: 320px;
+  height: 300px;
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -504,15 +527,65 @@ footer img {
   color: #fff;
   background-color: #a90f0b;
 }
-/* @medsia (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+
+
+
+/* Smartphones (up to 480px) */
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 481px - 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .hero {
   }
-  a:hover {
-    color: #747bff;
+}
+
+/* Medium devices (landscape tablets, 768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    flex-wrap: nowrap;
   }
-  button {
-    background-color: #f9f9f9;
+  .land-inquiry p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  
+  .land-inquiry {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+  }
+ 
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+  
+}
+
+
+
+
+
+
+
+/* Optional for responsiveness */
+/* @media only screen and (max-width: 768px) {
+  .left {
+    padding: 1.2rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .left h4 {
+    font-size: 1.4rem;
+  }
+
+  .left h5 {
+    font-size: 0.95rem;
   }
 } */

@@ -10,11 +10,11 @@ export default function Header(){
             </div>
             <nav className="center-div">
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="listings">Listings</NavLink>
-                {/* <NavLink to="services">Services</NavLink> */}
+                {/* <NavLink to="listings">Listings</NavLink>
+                <NavLink to="services">Services</NavLink>
                 <NavLink to="blog">Blog</NavLink>
                 <NavLink to="about">About</NavLink>
-                <NavLink to="contact-us">Contact Us</NavLink>
+                <NavLink to="contact-us">Contact Us</NavLink> */}
             </nav>
         </header>
     )
