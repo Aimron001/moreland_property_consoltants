@@ -201,7 +201,9 @@ nav {
     transform: translateY(0);
   }
 }
-
+.land-inquiry-mobile {
+  display: none;
+}
 .land-inquiry h3 {
   font-size: 1.4rem;
   font-weight: bold;
@@ -245,67 +247,31 @@ nav {
 
 /*******FEATURED************/
 .featured {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px auto;
+  margin: auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
+  text-align: center;
+  width: 70%;
 }
-
-.featured-details {
-  flex: 1;
-  padding: 20px;
-  min-width: 300px;
-}
-
-.featured-photos {
-  flex: 1;
-  min-width: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-.featured-photos img {
+.featured > div {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: opacity 1s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.property{
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  line-height: 1.6rem;
+}
+.property > img {
+  width: 100%;
 }
 
-.featured h2 {
-  font-size: 2.5rem;
-  color: #2756bd;
-  margin-bottom: 10px;
-}
-
-.featured h3 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.featured h4 {
-  font-size: 1.5rem;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.featured p {
-  font-size: 1.2rem;
-  color: #777;
-  margin-bottom: 15px;
-}
-
-.details-section {
-  margin-bottom: 20px;
-}
-
-.enquire-button {
+.enquire-btn {
   background-color: #2756bd;
   color: white;
   padding: 10px 20px;
@@ -316,9 +282,11 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-.enquire-button:hover {
+.enquire-btn:hover {
   background-color: #1e4297;
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -441,6 +409,7 @@ nav {
   line-height: 2rem;
   margin: 3rem auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 90%;
   gap: 20px;
@@ -461,7 +430,10 @@ footer {
   color: #fff;
   line-height: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 footer img {
   width: 100px;
@@ -539,7 +511,17 @@ footer img {
 
 /* Small devices (portrait tablets and large phones, 481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  .hero {
+  .about-us {
+    flex-direction: column;
+  }
+  .land-inquiry {
+    display: none;
+  }
+  .land-inquiry-mobile{
+    display: block;
+  }
+  .featured > div {
+    justify-content: center;
   }
 }
 
