@@ -9,7 +9,7 @@ export default function Header(){
                 <h3><span>Moreland</span> Property Consultants</h3>
             </div>
             <nav className="center-div">
-                <NavLink to="/">Home</NavLink>
+                {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="listings">Listings</NavLink>
                 <NavLink to="services">Services</NavLink>
                 <NavLink to="blog">Blog</NavLink>
