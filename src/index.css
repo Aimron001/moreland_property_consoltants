@@ -463,7 +463,7 @@ footer img {
 }
 
 /* Small devices (portrait tablets and large phones, 481px - 767px) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 400px) and (max-width: 767px) {
   .about-us {
     flex-direction: column;
   }

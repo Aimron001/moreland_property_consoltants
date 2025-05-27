@@ -6,6 +6,8 @@ import Blog from './pages/Blog'
 import About from './pages/About'
 import ContactUs from './pages/ContactUs'
 import Layout from './components/Layout'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import logo from "./assets/logo-white.png"
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -19,7 +21,10 @@ function App() {
     </Route>
   ))
   return (
-    <RouterProvider router={router} />
+    <>
+      <RouterProvider router={router} />
+      <FloatingWhatsApp phoneNumber={"254720321100"} accountName="Moreland" avatar={logo} allowClickAway={true} allowEsc={true}/>
+    </>
   )
 }
 

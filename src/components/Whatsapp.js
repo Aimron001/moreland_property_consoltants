@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppButton = (message) => {
-    const phoneNumber = '254781934893'; // Replace with your number (with country code)
+    const phoneNumber = '254720321100'; // Replace with your number (with country code)
     // const message = 'Hello, I have a question!'; // Optional message
     
     // Encode message for URL
