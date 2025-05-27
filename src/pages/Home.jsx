@@ -7,6 +7,7 @@ import Valuation from "../assets/valuation.jpg"
 import Survey from "../assets/survey.jpg"
 import Admin from "../assets/admin.jpg"
 import Marketing from "../assets/marketing.jpg"
+import Whatsapp from "../components/Whatsapp"
 const services = [
     {
         id: 1,
@@ -44,9 +45,9 @@ export default function Home(){
     return (
         <div>
             <Hero />
-            <div className="land-inquiry-mobile">
+            {/* <div className="land-inquiry-mobile">
                 <LandInquiry />
-            </div>
+            </div> */}
             <Featured />
             <h1>Our Services</h1>
           
@@ -54,6 +55,7 @@ export default function Home(){
                 {...serviceElements}
             </div>
             <AboutUs />
+            
         </div>
     )
 }

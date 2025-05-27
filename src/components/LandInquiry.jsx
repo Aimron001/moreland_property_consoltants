@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import WhatsAppButton from "./Whatsapp";
 
 export default function LandInquiry() {
     const [shake, setShake] = useState(false);
@@ -41,7 +42,7 @@ export default function LandInquiry() {
         <strong>Lukenya</strong>.
       </p>
       <p className="leads-text">🚀 Got any leads? Let's connect!</p>
-      <button className="contact-btn">📩 Contact Us</button>
+      <button className="contact-btn" onClick={() => WhatsAppButton("I have a lead.")}>📩 Contact Us</button>
 
     </motion.div>
   );
