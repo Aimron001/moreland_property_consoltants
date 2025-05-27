@@ -461,6 +461,7 @@ footer img {
   .about-us {
     flex-direction: column;
     font-size: 1rem;
+    background-color: #a90f0b;
   }
   /* .land-inquiry {
     display: none;
@@ -517,6 +518,7 @@ footer img {
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .about-us {
     flex-direction: column;
+    background-color: #ff5733;
   }
   /* .land-inquiry {
     display: none;
