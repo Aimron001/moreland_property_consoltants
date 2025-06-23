@@ -597,6 +597,10 @@ footer > div {
   .youtube-video-container iframe {
     width: 500px;
   }
+  .property {
+    width: 300px;
+  }
+
 
   
 }
