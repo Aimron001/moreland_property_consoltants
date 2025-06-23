@@ -8,7 +8,7 @@ export default function Property(props){
             <h4>{props.title}</h4>
             <p>{props.description}</p>
             <h4>{props.price}</h4>
-            <button className='enquire-btn' onClick={() => WhatsAppButton(`I am interested in the land ${props.description}`)}>Enquire</button>
+            <button className='enquire-btn' onClick={() => WhatsAppButton(`Hello Moreland Property Consultants, \nI am interested in the land ${props.description}`)}>Enquire</button>
         </div>
     )
 }
