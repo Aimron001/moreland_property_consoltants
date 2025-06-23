@@ -1,14 +1,14 @@
 
 import plot from '../assets/plot.jpg'
 import WhatsAppButton from './Whatsapp'
-export default function Property(){
+export default function Property(props){
     return (
         <div className="property">
-            <img src={plot} alt="" />
-            <h4>PLOT 476</h4>
-            <p>Located near 2km from Mombasa Highway Located near 2km from Mombasa Highway</p>
-            <h4>Ksh. 1.5M</h4>
-            <button className='enquire-btn' onClick={() => WhatsAppButton("I am interested in plot number 476")}>Enquire</button>
+            <img src={plot} alt="A photo of the property" />
+            <h4>{props.title}</h4>
+            <p>{props.description}</p>
+            <h4>{props.price}</h4>
+            <button className='enquire-btn' onClick={() => WhatsAppButton(`I am interested in the land ${props.description}`)}>Enquire</button>
         </div>
     )
 }

@@ -12,6 +12,10 @@ export default function Hero(){
                     </div>
                     <h5>Land Sales · Surveys · Valuations · Administration.</h5>
             </div>
+
+
+    
+
             <LandInquiry />
         </div>
     )

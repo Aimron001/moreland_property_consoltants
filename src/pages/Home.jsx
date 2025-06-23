@@ -8,6 +8,7 @@ import Survey from "../assets/survey.jpg"
 import Admin from "../assets/admin.jpg"
 import Marketing from "../assets/marketing.jpg"
 import Whatsapp from "../components/Whatsapp"
+import YoutubeVideoContainer from "../components/YoutubeVideoContainer";
 const services = [
     {
         id: 1,
@@ -45,9 +46,7 @@ export default function Home(){
     return (
         <div>
             <Hero />
-            {/* <div className="land-inquiry-mobile">
-                <LandInquiry />
-            </div> */}
+            <YoutubeVideoContainer />
             <Featured />
             <h1>Our Services</h1>
           
