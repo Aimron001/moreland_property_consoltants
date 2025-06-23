@@ -533,6 +533,9 @@ footer > div {
   .youtube-video-container iframe {
     width: 320px;
   }
+  .property {
+    width: 300px;
+  }
 
 }
 
