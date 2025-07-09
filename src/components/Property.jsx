@@ -4,7 +4,7 @@ import WhatsAppButton from './Whatsapp'
 export default function Property(props){
     return (
         <div className="property">
-            <img src={plot} alt="A photo of the property" />
+            <img src={props.photo} alt="A photo of the property" />
             <h4>{props.title}</h4>
             <p>{props.description}</p>
             <h4>{props.price}</h4>

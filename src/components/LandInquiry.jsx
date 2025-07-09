@@ -35,14 +35,12 @@ export default function LandInquiry() {
           initial={{ opacity: 0, y: -30 }}
           whileHover={{ rotate: [0, -2, 2, 0], scale: 1.1 }} // Subtle hover effect
         >
-      <h3>🔍 Je, una ekari 2-3 karibu na Mombasa Highway?</h3>
+      <h3>Prime 50-Acre Industrial Land for Sale - Lukenya, Athi River</h3>
       <p>
-        We are looking for <strong>2-3 acres</strong> within <strong>1 km</strong> of
-        Mombasa Highway, between <strong>Malili</strong> and{" "}
-        <strong>Lukenya</strong>.
-      </p>
-      <p className="leads-text">🚀 Got any leads? Let's connect!</p>
-      <button className="contact-btn" onClick={() => WhatsAppButton("I have a lead.")}>📩 Contact Us</button>
+       Located West of Machakos Municipality, near key industrial zones, EPZ, Mombasa Road, and the Greater Eastern Bypass.</p>
+      <p className="leads-text">Price: Ksh. 25 Million per Acre
+</p>
+      <button className="contact-btn" onClick={() => WhatsAppButton("I'm interested in the Prime 50-Acre Industrial Land for Sale")}>📩 Contact Us</button>
 
     </motion.div>
   );
